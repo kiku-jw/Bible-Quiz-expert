@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Expert</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Hover trigger zone for menu -->
+    <div id="menu-trigger" class="menu-trigger"></div>
+
+    <!-- Main App Container -->
+    <div id="app" class="app">
+      <div class="loading">Loading App...</div>
+    </div>
+
+    <!-- Error container -->
+    <div id="error-container" class="error hidden"></div>
+
+    <script>
+      window.onerror = function (msg, url, line) {
+        const container = document.getElementById("error-container");
+        if (container) {
+          container.textContent = "Error: " + msg + " (Line: " + line + ")";
+          container.classList.remove("hidden");
+        }
+      };
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
