@@ -40,3 +40,7 @@ python3 -m http.server 8080
 ## Важно
 
 Для GitHub Pages добавлен файл `.nojekyll`, чтобы гарантированно отдавались все статические файлы без jekyll-обработки.
+
+## License
+
+No open-source license is granted. See [LICENSE](LICENSE).
