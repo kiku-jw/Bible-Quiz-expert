@@ -29,10 +29,16 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Stage Pages artifact
+        run: |
+          mkdir _site
+          cp index.html app.js index.css season_1.txt .nojekyll _site/
+          cp -R img sound _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

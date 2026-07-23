@@ -321,7 +321,9 @@ button, input, select{ font: inherit; color: inherit; }
   text-align:center;
   font-weight: 900;
   letter-spacing:.08em;
+  margin: 0;
 }
+.title .t1, .title .t2{ display:block; }
 .title .t1{ font-size: 28px; color:#ca8a04; }
 .title .t2{ font-size: 56px; color: var(--yellow2); line-height:1; }
 
