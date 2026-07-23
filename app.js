@@ -384,10 +384,10 @@ function renderSetup() {
 
   return `
     <div class="container center setup">
-      <div class="title">
-        <div class="t1">БИБЛЕЙСКИЙ</div>
-        <div class="t2">ЭКСПЕРТ</div>
-      </div>
+      <h1 class="title">
+        <span class="t1">БИБЛЕЙСКИЙ</span>
+        <span class="t2">ЭКСПЕРТ</span>
+      </h1>
 
       <div class="card">
         <div class="row">
